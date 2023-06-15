@@ -5,6 +5,10 @@ namespace App\Controllers;
 // Données transférées à la vue demandée...
 $data ['title']=ucfirst($page);
 
+// Afficher la vue avec en-tete et pied-de-page
+return view('templates/header',$data);
+
+
 use CodeIgniter\Exceptions\PageNotFoundException;
 class Accueil extends BaseController
 {
